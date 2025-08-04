@@ -1,0 +1,10 @@
+---
+page-title: Welcome
+current_page: home
+---
+--- if( page-title ) ---
+<h1>--- metadata.page-title ---</h1>
+--- endif ---
+--- if( current_page == "home" ) ---
+<p>This is the home page.</p>
+--- endif ---

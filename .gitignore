@@ -1,0 +1,4 @@
+# Ignore Generated Output Files
+output
+# Ignore StaticPHP File
+StaticPHP.php
