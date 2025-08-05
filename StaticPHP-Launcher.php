@@ -191,7 +191,7 @@ $configurable_options[ 'test_mode_output_dir_path' ] = __DIR__ . DIRECTORY_SEPAR
 	If you wish to use a specific version of StaticPHP, or if your connection to the internet is weak or limited,
 	you should disable this feature by setting it to false.
 */
-$configurable_options[ 'auto_update' ] = true;
+$configurable_options[ 'auto_update' ] = false;
 
 
 //	END OF CONFIGURABLE OPTIONS
