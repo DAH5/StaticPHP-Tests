@@ -184,6 +184,28 @@ $configurable_options[ 'test_mode_output_dir_path' ] = __DIR__ . DIRECTORY_SEPAR
 
 
 /*
+	Test Mode Output Results File
+
+	If set to true, a file containing the test results will be generated.
+
+	Defaults to true. Set to false to disable.
+*/
+
+$configurable_options[ 'test_mode_output_results_file' ] = true;
+
+
+/*
+	Test Mode Results File Path
+
+	If set to a valid path, an HTML file will be generated containing the test results.
+
+	Defaults to "tests/output/results.html". Set to a blank string to disable this feature.
+*/
+
+$configurable_options[ 'test_mode_results_file_path' ] = __DIR__ . DIRECTORY_SEPARATOR . "tests" . DIRECTORY_SEPARATOR . "output" . DIRECTORY_SEPARATOR . "results.html";
+
+
+/*
 	Auto Update
 
 	Downloads the latest version of StaticPHP upon every run to ensure you always run the latest version.
