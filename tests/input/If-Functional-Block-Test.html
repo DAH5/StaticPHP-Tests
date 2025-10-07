@@ -8,3 +8,15 @@ current_page: home
 --- if( current_page == "home" ) ---
 <p>This is the home page.</p>
 --- endif ---
+--- if( page-title && current_page ) ---
+<p>Page Title: --- metadata.page-title ---<br>Current Page: --- metadata.current_page ---</p>
+--- endif ---
+--- if( ! page-alt-title ) ---
+<p>There is no alternative page title.</p>
+--- endif ---
+--- if( current_page != "about" ) ---
+<p>This is not the about page.</p>
+--- endif ---
+--- if( current_page == "home" && page-title != "Home" ) ---
+<p>This is the home page, and the title is not Home.</p>
+--- endif ---
