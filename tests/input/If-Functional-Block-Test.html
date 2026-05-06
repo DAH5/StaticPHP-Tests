@@ -20,3 +20,6 @@ current_page: home
 --- if( current_page == "home" && page-title != "Home" ) ---
 <p>This is the home page, and the title is not Home.</p>
 --- endif ---
+--- if( ! page-title && ! article-title ) ---
+<p>No page or article title.</p>
+--- endif ---
