@@ -1,0 +1,1 @@
+function minification(){alert('JavaScript Minification Test');}

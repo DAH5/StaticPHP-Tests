@@ -1,0 +1,10 @@
+/*
+    CSS Minification Test
+    The contents of the .min.css varient of this file should be in minified form, with unneccessery spacing and comments removed.
+*/
+
+.minification
+{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
