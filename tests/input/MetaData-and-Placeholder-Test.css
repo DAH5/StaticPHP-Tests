@@ -1,0 +1,15 @@
+---
+primary_color: #ff0000
+secondary_color: #ffff00
+---
+.metadata
+{
+    background-color: --- metadata.primary_color ---;
+    color: --- metadata.secondary_color ---;
+}
+
+.metadata-alt
+{
+    background-color: --- metadata.secondary_color ---;
+    color: --- metadata.primary_color ---;
+}
