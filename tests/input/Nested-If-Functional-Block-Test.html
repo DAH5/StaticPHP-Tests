@@ -1,0 +1,14 @@
+---
+section: docs
+current_nav_item: getting-started
+---
+
+--- if( section == "docs" ) ---
+<nav class="docs-nav">
+    <a href="#getting-started" class="docs-nav-item--- if( current_nav_item == "getting-started" ) --- current--- endif ---">Getting Started</a>
+    <a href="#awesomeness" class="docs-nav-item--- if( current_nav_item == "awesomeness" ) --- current--- endif ---">Awesomeness</a>
+    <a href="#dreams" class="docs-nav-item--- if( current_nav_item == "dreams" ) --- current--- endif ---">Dreams</a>
+    <a href="#randomish" class="docs-nav-item--- if( current_nav_item == "randomish" ) --- current--- endif ---">Ramdomish</a>
+    <a href="#blank" class="docs-nav-item--- if( current_nav_item == "blank" ) --- current--- endif ---">Blank</a>
+</nav>
+--- endif ---
