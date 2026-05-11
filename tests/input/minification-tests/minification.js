@@ -1,6 +1,7 @@
 ---
 minify: true
 minify_inplace: false
+name: Minification JS
 ---
 /*
     JavaScript Minification Test

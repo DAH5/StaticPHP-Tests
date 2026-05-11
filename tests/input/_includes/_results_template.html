@@ -32,19 +32,31 @@
             <div class="failed-tests">
                 <h2>Tests Failed (--- metadata.failed_results_count ---)</h2>
 
-                --- metadata.failed_tests_paths_list ---
+                <ul>
+                --- loop( test_results = "failed" ) ---
+                    <li><b>--- test.name ---:</b> <code>--- test.uri ---</code></li>
+                --- endloop ---
+                </ul>
             </div>
 
             <div class="unknown-tests">
                 <h2>Tests Unknown (--- metadata.unknown_results_count ---)</h2>
 
-                --- metadata.unknown_tests_paths_list ---
+                <ul>
+                --- loop( test_results = "unknown" ) ---
+                    <li><b>--- test.name ---:</b> <code>--- test.uri ---</code></li>
+                --- endloop ---
+                </ul>
             </div>
 
             <div class="successful-tests">
                 <h2>Tests Successful (--- metadata.successful_results_count ---)</h2>
 
-                --- metadata.successful_tests_paths_list ---
+                <ul>
+                --- loop( test_results = "success" ) ---
+                    <li>--- test.name ---: <i>--- test.uri ---</i></li>
+                --- endloop ---
+                </ul>
             </div>
         </div>
     </body>

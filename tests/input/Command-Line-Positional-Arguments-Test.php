@@ -1,5 +1,6 @@
 ---
 friendly_urls: false
+name: Command Line Positional Arguments Test
 ---
 <?php
 
