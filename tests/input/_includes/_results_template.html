@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Tests Results - StaticPHP</title>
+
+        <style type="text/css">
+            *, *::before, *::after { box-sizing: border-box; }
+            html, body { font-family: sans-serif; font-size: 1rem; margin: 0; padding: 0; background-color: #f1f1f1; color: #0e0e0e; }
+            .container { max-width: 75rem; padding: 1rem; margin-left: auto; margin-right: auto; }
+            .failed-tests { font-size: 2em; }
+            .failed-tests h2 { color: red; }
+            .unknown-tests { font-size: 1.5em; }
+            .unknown-tests h2 { color: orange; }
+            .successful-tests h2 { color: green; }
+
+            @media( prefers-color-scheme: dark )
+            {
+                html, body { background-color: #222; color: #ddd; }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>StaticPHP Tests Results</h1>
+
+            <hr>
+
+            <div class="failed-tests">
+                <h2>Tests Failed (--- metadata.failed_results_count ---)</h2>
+
+                --- metadata.failed_tests_paths_list ---
+            </div>
+
+            <div class="unknown-tests">
+                <h2>Tests Unknown (--- metadata.unknown_results_count ---)</h2>
+
+                --- metadata.unknown_tests_paths_list ---
+            </div>
+
+            <div class="successful-tests">
+                <h2>Tests Successful (--- metadata.successful_results_count ---)</h2>
+
+                --- metadata.successful_tests_paths_list ---
+            </div>
+        </div>
+    </body>
+</html>
