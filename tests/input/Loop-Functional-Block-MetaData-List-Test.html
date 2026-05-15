@@ -1,0 +1,27 @@
+---
+shopping_list:
+- Bread
+- Butter
+- Milk
+- Coffee
+- Biscuites
+cost: £10
+
+not_a_list: One Item
+---
+
+--- if( shopping_list ) ---
+    <ul>
+        --- loop( metadata = "shopping_list" ) ---
+            <li>--- loop.item ---</li>
+        --- endloop ---
+    </ul>
+
+    <p><b>First Item:</b> --- metadata.shopping_list ---</p>
+--- endif ---
+
+<p><b>Cost:</b> --- metadata.cost ---</p>
+
+--- loop( metadata = "not_a_list" ) ---
+    <p>Not A List Item: --- loop.item ---</p>
+--- endloop ---
