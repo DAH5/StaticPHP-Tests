@@ -13,6 +13,11 @@ change_log:
 + Added an awesome feature.
 - Removed an unwanted feature.
 * Fixed a buggy feature.
+
+nav_menu:
+- Home :: /home :: Takes you to the home page.
+- About :: /about :: All about the site.
+- Contact :: /contact :: Details on how to get in touch.
 ---
 
 --- if( shopping_list ) ---
@@ -41,3 +46,10 @@ change_log:
 </ul>
 
 <p><b>First Item: </b> --- metadata.change_log ---</p>
+
+
+<div class="nav-menu">
+--- loop( metadata = "nav_menu", split = "::" ) ---
+    <a href="--- loop.item.2 ---" title="--- loop.item.3 ---">--- loop.item.1 ---</a>
+--- endloop ---
+</div>
