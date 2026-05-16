@@ -8,6 +8,11 @@ shopping_list:
 cost: £10
 
 not_a_list: One Item
+
+change_log:
++ Added an awesome feature.
+- Removed an unwanted feature.
+* Fixed a buggy feature.
 ---
 
 --- if( shopping_list ) ---
@@ -25,3 +30,14 @@ not_a_list: One Item
 --- loop( metadata = "not_a_list" ) ---
     <p>Not A List Item: --- loop.item ---</p>
 --- endloop ---
+
+
+<p><b>Change Log</b></p>
+
+<ul>
+--- loop( metadata = "change_log" ) ---
+    <li><b>--- loop.delimiter ---</b> --- loop.item ---</li>
+--- endloop ---
+</ul>
+
+<p><b>First Item: </b> --- metadata.change_log ---</p>
