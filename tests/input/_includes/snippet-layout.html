@@ -1,0 +1,20 @@
+---
+content_placeholder: {{ content_placeholder }}
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>The Snippet Functional Block Test</title>
+    </head>
+    
+    <body>
+        --- snippet( id = "hello" ) ---
+        <p>Hello, --- metadata.hello ---!</p>
+        --- endsnippet ---
+
+        {{ content_placeholder }}
+    </body>
+</html>
