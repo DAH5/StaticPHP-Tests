@@ -1,0 +1,19 @@
+---
+title: Custom Redirection Template Test for $oldPath to $newDestination
+duration_in_seconds: 10
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="--- metadata.duration_in_seconds ---; url='$newDestination'" />
+        
+        <title>--- metadata.title ---</title>
+    </head>
+    
+    <body>
+        <h1>--- metadata.title ---</h1>
+        <p>If you are not redirected within the next <b>--- metadata.duration_in_seconds --- seconds</b>, please <a href="$newDestination">click here</a>.</p>
+    </body>
+</html>

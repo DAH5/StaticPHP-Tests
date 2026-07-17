@@ -112,7 +112,7 @@ $configurable_options[ 'bulk_redirects_filename' ] = "_bulk_redirects";
 	Set to a string (e.g. "_my_redirection_template.html"). Defaults to "_redirection_template.html" if not specified.
 */
 
-$configurable_options[ 'redirection_template_filename' ] = "_redirection_template.html";
+$configurable_options[ 'redirection_template_filename' ] = "Custom-Redirection-Template-Test.html";
 
 
 /*
