@@ -1,0 +1,20 @@
+---
+colors:
+- red
+- orange
+- yellow
+- blue
+- green
+---
+
+--- loop( metadata = "colors" ) ---
+.color---- loop.item ---
+{
+    background-color: --- loop.item ---;
+}
+
+.color-text---- loop.item ---
+{
+    color: --- loop.item ---;
+}
+--- endloop ---
