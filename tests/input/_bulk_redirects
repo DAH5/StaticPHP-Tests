@@ -1,2 +1,4 @@
 /_bulk_redirects/redirect_one.html https://destination.tld/one.html
 /_bulk_redirects/redirect_two.html https://destination.tld/two.html
+/_bulk_redirects/one /_bulk_redirects/two
+/_bulk_redirects/doc.md /_bulk_redirects/doc
